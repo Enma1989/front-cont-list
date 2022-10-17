@@ -7,7 +7,8 @@ video {
   }
   
   .hero-container {
-    /* background: url('/images/img-home.jpg') center center/cover no-repeat; */
+    /* DEJO LA IMAGEN POR SI EL VIDEO FALLA
+    background: url('/images/img-home.jpg') center center/cover no-repeat; */
     height: 100vh;
     width: 100%;
     display: flex;
@@ -40,9 +41,10 @@ video {
     margin: 6px;
   }
   
-  .fa-play-circle {
+  /* EL ICONO LO QUITE PARA DARLE PRESENCIA A LA PAGINA, PERO PODEMOS VOLVER A USARLO
+  .fa-pen-nib {
     margin-left: 4px;
-  }
+  }*/
   
   @media screen and (max-width: 960px) {
     .hero-container > h1 {
