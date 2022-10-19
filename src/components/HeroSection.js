@@ -12,14 +12,14 @@ function HeroSection() {
       <div className='hero-btns'>
         <button
           className='btnTec'>
-          <Link className='link' to={"./pages/Tecnicos"}>
+          <Link className='link' to="/Tec">
             Tecnicos
             </Link>
         </button>
 
         <button
           className='btnUser' onClick={console.log('Opa!')}>
-          <Link className='linkUser' to={"./pages/Users"}>
+          <Link className='linkUser' to="/user">
             Usuarios
             </Link>
         </button>        
