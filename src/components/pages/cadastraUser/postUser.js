@@ -9,7 +9,8 @@ import axios from "axios";
 const validationPost = yup.object().shape({
     nome:yup.string().required("nome é obrigatorio").min(5,"nome completo")   ,
     email:yup.string().required("email obrigatorio").email("email invalido")  ,
-    contato:yup.number("numero de contato").required("contato obrigatorio")
+    contato:yup.number("numero de contato").required("contato obrigatorio"),
+    interesse:yup.string().required("interesse obrigatorio"),
 })
 
 function Postuser() {
@@ -53,6 +54,12 @@ function Postuser() {
                             <div className="fields">
                             <label>Contato</label>
                             <input type="text" name="contato" {...register("contato")}/>
+                            <p className="error-message">{errors.contato?.message}</p>
+                            </div>
+
+                            <div className="fields">
+                            <label>Interesse</label>
+                            <input type="text" name="interesse" {...register("interesse")}/>
                             <p className="error-message">{errors.contato?.message}</p>
                             </div>
 

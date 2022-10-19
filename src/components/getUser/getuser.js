@@ -34,7 +34,7 @@ function Getuser() {
             <th>nome</th>
             <th>email</th>
             <th>contato</th>
-           
+            <th>interesse</th>
            
           </tr>
         </thead>
@@ -45,7 +45,7 @@ function Getuser() {
             <td>{post.nome}</td>
             <td>{post.email}</td>
             <td>{post.contato}</td>
-            
+            <td>{post.interesse}</td>
             
             
           </tr>
