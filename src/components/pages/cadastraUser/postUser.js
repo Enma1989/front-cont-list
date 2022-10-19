@@ -1,7 +1,7 @@
 import React from "react";
 import {useForm} from "react-hook-form"
 import "../cadastraUser/form.css"
-import {useHistory} from "react-router-dom"
+import {useHistory, Link} from "react-router-dom"
 import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from "yup";
 import axios from "axios";
@@ -58,6 +58,11 @@ function Postuser() {
 
                             <div className="btn-post">
                                 <button type="submit">Criar Usuario</button>
+                            </div>
+                            <div className="btn-post">
+                                <Link to="/tecnlist">
+                                    <button>ja tem cadastro</button>
+                                </Link>
                             </div>
 
 

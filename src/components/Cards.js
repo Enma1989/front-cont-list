@@ -11,7 +11,7 @@ function Cards() {
           <ul className='cards__items'>
             <CardItem
               src='images/img-9.jpg'
-              text='Desenho de sites Web personalizados? Manutenção do seu site? entre em contatto com nossos desenvolvedores cadastrados agora!'
+              text='Desenho de sites Web personalizados? Manutenção do seu site? entre em contato com nossos desenvolvedores cadastrados agora!'
               label='Desenvolvedores Web'
               path='/services'
             />
