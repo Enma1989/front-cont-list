@@ -5,7 +5,7 @@ import Services from './components/pages/Services';
 import Aboutus from './components/pages/About-us';
 import SignUp from './components/pages/Sign-up';
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import './App.js';
+import './App.css';
 
 
 function App() {
