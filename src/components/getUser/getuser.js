@@ -1,6 +1,7 @@
 import React,{ useState,useEffect} from 'react';
 import axios from 'axios';
 import Table from 'react-bootstrap/Table';
+import './getuser.css';
 
 
 function Getuser() {
@@ -23,20 +24,21 @@ function Getuser() {
         {posts.map((post,key)=>{
             return(
                 
-             <div>   
+             <div className='main-container'>   
           
 
            <Table striped bordered hover="sm">
-        <thead className='table-container' >
+        <thead>
           <tr>
-            <th>id</th>
+            <th>     </th>
             <th>nome</th>
             <th>email</th>
             <th>contato</th>
            
-            <th>Table heading</th>
+           
           </tr>
         </thead>
+        
         <tbody>
           <tr>
             <td></td>
@@ -45,7 +47,7 @@ function Getuser() {
             <td>{post.contato}</td>
             
             
-            <td>Table cell</td>
+            
           </tr>
     
             </tbody>
