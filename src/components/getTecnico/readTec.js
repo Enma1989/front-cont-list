@@ -9,7 +9,7 @@ function Gettecnico() {
         const[posts, setPosts]= useState([])
 
     useEffect(() =>{
-       axios.get('http://localhost:4000/tecnicos')
+       axios.get('https://projeto-getech.herokuapp.com/tecnicos')
        .then((response)=>{
             setPosts(response.data)
        })

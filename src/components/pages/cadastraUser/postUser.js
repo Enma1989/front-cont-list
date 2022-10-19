@@ -19,7 +19,7 @@ function Postuser() {
     const { register, handleSubmit,   formState: { errors } } = useForm({
         resolver: yupResolver(validationPost)
     });
-    const addPost= data => axios.post("http://localhost:4000/User",data)
+    const addPost= data => axios.post("https://projeto-getech.herokuapp.com/User",data)
     .then(() =>{
         console.log("deu tudo certo")
         history.push("/tecnlist")

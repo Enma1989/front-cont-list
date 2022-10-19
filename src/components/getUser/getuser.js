@@ -9,7 +9,7 @@ function Getuser() {
         const[posts, setPosts]= useState([])
 
     useEffect(() =>{
-       axios.get('http://localhost:4000/user')
+       axios.get('https://projeto-getech.herokuapp.com/user')
        .then((response)=>{
             setPosts(response.data)
        })

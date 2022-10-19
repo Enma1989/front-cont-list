@@ -20,7 +20,7 @@ function Postec() {
     const { register, handleSubmit,   formState: { errors } } = useForm({
         resolver: yupResolver(validationPost)
     });
-    const addPost= data => axios.post("http://localhost:4000/tecnicos",data)
+    const addPost= data => axios.post("https://projeto-getech.herokuapp.com/tecnicos",data)
     .then(() =>{
         console.log("Cadastro criado")
         history.push("/userlist")
